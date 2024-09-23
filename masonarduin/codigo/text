@@ -1,0 +1,11 @@
+#Algumas observações:
+
+# A função millis() é responsável por contar quanto tempo a placa está ligada (em milissegundos) executando
+# aquele sketch (programa) e ela tem um limite, ou seja, depois de 50 dias de programa executando sem que a placa
+# desligue haverá um overflow da variável (vai exceder o limite que ela suporta) e quando isso acontecer o tempo voltará 
+# a ser contado do zero. Por esse motivo não usamos millis() como um relógio para contar tempos longos que ultrapasse o limite dos 50 dias.
+# Para fazer isso a solução ideal para tempo é a utilização do módulo RTC.
+
+# No nosso caso precisamos apenas contar o tempo decorrido de 1000 milissegundos e 100 milissegundos, 
+# logo podemos utilizar a função millis() tranquilamente que mesmo que o arduino fique ligado mais de 50 dias não afetará a
+# execução porque a variável tempoAtual vai zerar e consequentemente as outras variáveis tempoDecorrido e tempoDecorrido2 serão atualizadas.

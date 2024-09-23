@@ -1,0 +1,33 @@
+# 1. Placa de arduino 
+# 2. 2 Leds (qualquer cor)
+# 3. 2 Resistores (recomendado 220 ohms para limitar a corrente nos Leds e evitar que eles queimem)
+# 4. Jumpers (Fios de conexao para ligar os componentes)
+# 5. Protoboard (placa de ensaio) para montar o circuito sem solda
+
+# MONTAGEM DO CIRCUITO 
+
+LED 1:
+
+# Conecte o Anodo (perna longa) do LED 1 ao pino digital 13 do Arduino.
+# Conecte o catodo (perna curta) do LED 1 a um resistor e, em seguida, 
+conecte o outro lado do resistor ao GND (terra).
+
+LED 2:
+
+# Conecte o Anodo (perna longa) do LED 2 ao pino digital 12 do Arduino.
+# Conecte o catodo (perna curta) do LED 2 a um resistor e, em seguida, 
+conecte o outro lado do resistor ao GND (terra).
+
+
+# Conexoes Resumidas:
+Pino 13 do Arduino → anodo do LED 1 → Catodo do LED 1 → Resistor → GND.
+Pino 12 do Arduino → anodo do LED 2 → Catodo do LED 2 → Resistor → GND.
+
+# Equipamento adicional (opcional):
+Fonte de alimentacao externa (se necessario, mas o Arduino pode ser alimentado via cabo USB do
+computador).
+Multimetro (para verificar se ha corrente passando e checar o funcionamento dos LEDs).
+
+observacoes: Apos a montagem, voce pode carregar o codigo no Arduino atraves do software Arduino IDE e
+observar os LEDs piscando de acordo com os intervalos programados.
+
